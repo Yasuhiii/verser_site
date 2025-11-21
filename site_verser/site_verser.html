@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plano de Marketing — Verser</title>
+  <style>
+    :root{
+      --accent:#0f6ef0;
+      --dark:#071233;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family:Inter, system-ui, -apple-system, sans-serif;
+      background:var(--bg);
+      color:#0b1220;
+      line-height:1.6;
+    }
+
+    /* NAV FIXA */
+    header{
+      background:linear-gradient(180deg,#071133 0%, #0b1a2b 100%);
+      color:white;
+      padding:36px 20px 90px;
+      text-align:center;
+      position:relative;
+    }
+
+    nav{
+      position:absolute;
+      bottom:-28px;
+      left:50%;
+      transform:translateX(-50%);
+      background:white;
+      padding:12px 20px;
+      border-radius:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,.15);
+      display:flex;
+      gap:14px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:var(--dark);
+      padding:8px 14px;
+      font-weight:600;
+      border-radius:8px;
+      transition:.2s;
+    }
+
+    nav a:hover{
+      background:var(--accent);
+      color:white;
+    }
+
+    .container{
+      max-width:980px;
+      margin:60px auto 30px;
+      padding:0 18px;
+    }
+
+    h1{font-size:30px;margin-bottom:6px}
+    .lead{color:#dbe7ff}
+
+    /* HERO */
+    .hero{margin-top:24px}
+    .hero img{
+      width:100%;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(2,6,23,.2);
+      animation:fadeIn .6s ease;
+    }
+
+    /* CARDS */
+    section.card{
+      background:white;
+      padding:22px;
+      border-radius:14px;
+      margin-bottom:16px;
+      box-shadow:0 6px 16px rgba(11,18,32,.06);
+      animation:fadeIn .6s ease;
+    }
+
+    section.card h2{
+      margin-bottom:10px;
+      color:var(--dark);
+    }
+
+    ul{padding-left:20px}
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 300px;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:8px;
+    }
+
+    .table th,.table td{
+      padding:10px 8px;
+      border-bottom:1px solid #eef2f6;
+    }
+
+    footer{
+      padding:26px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#eef6ff;
+      color:var(--accent);
+      padding:6px 12px;
+      border-radius:999px;
+      font-weight:600;
+    }
+
+    .caption{
+      font-size:13px;
+      color:var(--muted);
+      margin-top:6px;
+    }
+
+    @media(max-width:880px){
+      nav{flex-wrap:wrap; padding:10px}
+      .two-col{grid-template-columns:1fr}
+      nav{position:static; transform:none; margin-top:22px}
+      header{padding-bottom:32px}
+    }
+
+    /* Animations */
+    @keyframes fadeIn{
+      from{opacity:0; transform:translateY(10px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Plano de Marketing — Empresa Verser</h1>
+    <div class="lead">Apresentação do produto, público-alvo e estratégias da marca.</div>
+
+    <nav>
+      <a href="#produto">Produto</a>
+      <a href="#publico">Público-Alvo</a>
+      <a href="#estrategias">Estratégias</a>
+      <a href="#orcamento">Orçamento</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="hero">
+      <img src="images/logotipoVerser.png" alt="Logotipo da Verser">
+    </div>
+
+    <section id="produto" class="card">
+      <h2>1. O Nosso Produto</h2>
+      <p>A <strong>Verser</strong> desenvolve software empresarial totalmente adaptado à legislação e idioma de cada país.</p>
+      <ul>
+        <li>Interface na língua do cliente</li>
+        <li>Regras locais de impostos e contabilidade</li>
+        <li>Suporte técnico no horário e idioma do país</li>
+      </ul>
+    </section>
+
+    <div class="two-col">
+      <div>
+        <section id="publico" class="card">
+          <h2>2. Público-Alvo</h2>
+          <ul>
+            <li>Pequenas e médias empresas</li>
+            <li>Negócios nos países lusófonos</li>
+            <li>Empresários, gerentes e diretores</li>
+          </ul>
+
+          <h2>3. Objetivos</h2>
+          <ul>
+            <li>Dar a conhecer a marca nos próximos 6 meses</li>
+            <li>Conquistar 10 novos clientes no primeiro ano</li>
+          </ul>
+        </section>
+
+        <section id="estrategias" class="card">
+          <h2>4. Estratégias de Marketing</h2>
+
+          <h3>A) Online</h3>
+          <ul>
+            <li>Site e Redes Sociais</li>
+            <li>Publicidade Digital</li>
+            <li>Email Marketing</li>
+          </ul>
+
+          <h3>B) Presencial</h3>
+          <ul>
+            <li>Eventos e feiras profissionais</li>
+            <li>Parcerias comerciais</li>
+            <li>Material de divulgação</li>
+          </ul>
+        </section>
+
+        <section id="medir" class="card">
+          <h2>6. Avaliação dos Resultados</h2>
+          <ul>
+            <li>Visitas ao site</li>
+            <li>Pedidos de orçamento</li>
+            <li>Número de clientes</li>
+            <li>Crescimento das redes sociais</li>
+          </ul>
+        </section>
+
+        <section id="conclusao" class="card">
+          <p>A Verser tem uma grande oportunidade no mercado ao oferecer software adaptado à realidade de cada país. Este plano de marketing irá ajudar a consolidar os primeiros passos da marca.</p>
+        </section>
+      </div>
+
+      <aside>
+        <section id="orcamento" class="card">
+          <h2>5. Orçamento Estimado</h2>
+
+          <table class="table">
+            <tr><th>Item</th><th>Custo</th></tr>
+            <tr><td>Site e domínio</td><td>30€</td></tr>
+            <tr><td>Publicidade Online</td><td>100€</td></tr>
+            <tr><td>Material gráfico</td><td>50€</td></tr>
+            <tr><td>Eventos</td><td>100€</td></tr>
+            <tr><th>Total</th><th>280€</th></tr>
+          </table>
+
+          <h3>Imagem ilustrativa</h3>
+          <img src="images/verser_sec.jpg" alt="Servidor Verser" style="width:100%; border-radius:10px">
+          <p class="caption">Mais ou menos a ideia do projeto (a imagem não é real).</p>
+        </section>
+
+        <section class="card">
+          <h3>Trabalho realizado por:</h3>
+          <p><em>[O Teu Nome]</em></p>
+          <p class="caption">Disciplina: Marketing<br>Data: [Data Atual]</p>
+        </section>
+      </aside>
+    </div>
+
+    <section class="card">
+      <h2>Galeria</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+        <figure>
+          <img src="images/verser_principal.jpg" alt="Imagem Verser" style="width:100%; border-radius:10px">
+          <figcaption class="caption">Imagem adicional da Verser</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="tag">Verser</div>
+    <p>Email: versersoftwares@gmail.com — Telefone: +238 976 97 99</p>
+    <p>© Verser — Plano de Marketing</p>
+  </footer>
+
+</body>
+</html>
+
